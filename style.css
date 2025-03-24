@@ -1,0 +1,953 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('/assets/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: url('/assets/Inter-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Start of Home */
+
+
+
+.navbar, 
+.navbar ul,
+.navbar ul li,
+.navbar ul li a,
+.menu-icon,
+.contact-icon {
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 70px;
+    transition: all 0.5s;
+}
+
+.navbar-scrolled{
+    background-color: #535C91;
+    box-shadow: 0 3px 10px rgba(146, 144, 195, 0.15);
+}
+
+/* Adjust logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Style the menu */
+.menu-icon ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu-icon ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Social icons positioning */
+.contact-icon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-icon a {
+    text-decoration: none;
+    font-family: 'Inter-Black';
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #9290C3;
+    transition: all 0.3s ease;
+}
+
+.contact-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-icon a:hover {
+    color: white;
+    background-color: #9290C3;
+}
+
+.contact-icon .gh:hover img {
+    content: url('/assets/github-w.png');
+}
+
+.contact-icon .mail:hover img {
+    content: url('/assets/mail-w.png');
+}
+
+.contact-icon img { 
+    width: 30px;
+    height: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar ul li a{
+    font-family: 'Inter-Black';
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-icon .fb{
+    color: #9290C3;
+}
+
+.contact-icon .ln{
+    color: #9290C3;
+}
+
+.contact-icon .gh img{
+    width: 40px;
+    height: 40px;
+}
+
+.banner_1{
+    background-color: #1B1A55;
+    height: 100vh;
+    width: 100%;
+}
+.profile img{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    border: 5px solid #9290C3;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-top: 150px;
+    margin-left: 150px;
+    margin-bottom: 112px;
+}
+
+.content-text {
+    color: #fff;
+}
+
+.content-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.content-text h1 {
+    font-family: 'Inter-Black';
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    background-color: #535c91;
+  
+  /* Create the gradient. */
+    background-image: linear-gradient(45deg, #535c91, #9290c3);
+  
+  /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.content-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.button{
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #9290C3;
+    color: #9290C3;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Start of Skills */
+
+.banner_2{
+    background-color: #070F2B;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.banner_2 h1{
+    font-family: 'Inter-Black';
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  
+    /* Create the gradient. */
+    background-image: linear-gradient(0deg, #535c91, #9290c3);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.row1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Programming Languages */
+
+.prog_lang{
+    background-color: #1B1A55;
+    width: 400px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+.prog_lang h3 {
+    font-family: 'Inter-Bold';
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+        /* Create the gradient. */
+    background-image: linear-gradient(45deg, #535c91, #9290c3);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.icons-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.prog_lang img{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.cpp, .python, .php {
+    background-color: rgba(83, 92, 145, .5);
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    float: left;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.cpp span, .python span, .php span {
+    opacity: 0;
+    color: #9290C3;
+    font-family: 'Inter-Bold';
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.cpp:hover img, .python:hover img, .php:hover img {
+    transform: translateY(-10px);
+}
+
+.cpp:hover, .python:hover, .php:hover {
+    background-color: rgba(83, 92, 145, 1);
+}
+
+.cpp:hover span, .python:hover span, .php:hover span {
+    opacity: 1;
+}
+
+/* Mobile Development */
+
+.mob_dev{
+    background-color: #1B1A55;
+    width: 400px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+.mob_dev h3 {
+    font-family: 'Inter-Bold';
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+        /* Create the gradient. */
+    background-image: linear-gradient(45deg, #535c91, #9290c3);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.mob_dev img{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.flutter{
+    background-color: rgba(83, 92, 145, .5);
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    float: left;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.flutter span{
+    opacity: 0;
+    color: #9290C3;
+    font-family: 'Inter-Bold';
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.flutter:hover img{
+    transform: translateY(-10px);
+}
+
+.flutter:hover{
+    background-color: rgba(83, 92, 145, 1);
+}
+
+.flutter:hover span{
+    opacity: 1;
+}
+
+/* Web Development */
+
+.web_dev{
+    background-color: #1B1A55;
+    width: 400px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+.web_dev h3 {
+    font-family: 'Inter-Bold';
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+        /* Create the gradient. */
+    background-image: linear-gradient(45deg, #535c91, #9290c3);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.icons-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.web_dev img{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.html, .css, .laravel {
+    background-color: rgba(83, 92, 145, .5);
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    float: left;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.html span, .css span, .laravel span {
+    opacity: 0;
+    color: #9290C3;
+    font-family: 'Inter-Bold';
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.html:hover img, .css:hover img, .laravel:hover img {
+    transform: translateY(-10px);
+}
+
+.html:hover, .css:hover, .laravel:hover {
+    background-color: rgba(83, 92, 145, 1);
+}
+
+.html:hover span, .css:hover span, .laravel:hover span {
+    opacity: 1;
+}
+
+/* Database Management */
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.data{
+    background-color: #1B1A55;
+    width: 400px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+.data h3 {
+    font-family: 'Inter-Bold';
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+        /* Create the gradient. */
+    background-image: linear-gradient(45deg, #535c91, #9290c3);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.data img{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.sql{
+    background-color: rgba(83, 92, 145, .5);
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    float: left;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.sql span{
+    opacity: 0;
+    color: #9290C3;
+    font-family: 'Inter-Bold';
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.sql:hover img{
+    transform: translateY(-10px);
+}
+
+.sql:hover{
+    background-color: rgba(83, 92, 145, 1);
+}
+
+.sql:hover span{
+    opacity: 1;
+}
+
+/* Design Tools */
+
+.design{
+    background-color: #1B1A55;
+    width: 400px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+.design h3 {
+    font-family: 'Inter-Bold';
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+        /* Create the gradient. */
+    background-image: linear-gradient(45deg, #535c91, #9290c3);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.icons-container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.design img{
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.ps, .ai, .figma {
+    background-color: rgba(83, 92, 145, .5);
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    float: left;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.ps span, .ai span, .figma span {
+    opacity: 0;
+    color: #9290C3;
+    font-family: 'Inter-Bold';
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.ps:hover img, .ai:hover img, .figma:hover img {
+    transform: translateY(-10px);
+}
+
+.ps:hover, .ai:hover, .figma:hover {
+    background-color: rgba(83, 92, 145, 1);
+}
+
+.ps:hover span, .ai:hover span, .figma:hover span {
+    opacity: 1;
+}
+
+/* Soft Skills */
+
+.skills{
+    background-color: #1B1A55;
+    width: 400px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+.skills h3 {
+    font-family: 'Inter-Bold';
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #535c91, #9290c3);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+/* Container for the skill tags */
+.soft-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10px;
+    width: 90%;
+}
+
+/* Individual skill tag styling */
+.skills p {
+    background-color: #535C91;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-family: 'Inter-Black';
+    font-size: 14px;
+    margin: 0;
+    display: inline-block;
+}
+
+/* Resume */
+
+.banner3{
+    background-color: #1B1A55;
+    height: 100vh;
+    width: 100%;
+}
+
+.column1{
+    margin-left: 125px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.column2{
+    margin-right: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.ojt{
+    bottom: -150px;
+    position: absolute;
+}
+
+.college{
+    position: absolute;
+    bottom: -150px;
+}
+
+.shs{
+    position: absolute;
+    bottom: -325px;
+}
+
+.column1 img, .column2 img{
+    height: 75px;
+    width: 75px;
+    margin-right: 20px;
+}
+
+.column1 h1, .column2 h1{
+    font-family: 'Inter-Black';
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 25px;
+  
+    /* Create the gradient. */
+    background-image: linear-gradient(0deg, #535c91, #9290c3);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.ojt, .college, .shs{
+    background-color: #070F2B;
+    width: 525px;
+    height: 150px;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.ojt:hover, .college:hover, .shs:hover{
+    background: rgb(83,92,145);
+    background: linear-gradient(90deg, rgba(83,92,145,1) 0%, rgba(146,144,195,1) 100%);
+
+}
+
+.ojt h6, .college h6, .shs h6{
+    font-family: 'Inter-Black';
+    font-size: 25px;
+    color: #535c91;
+}
+
+.ojt:hover h6, .college:hover h6, .shs:hover h6{
+    color: white !important;
+}
+
+.ojt h4, .college h4, .shs h4{
+    font-family: 'Inter-Black';
+    color: white;
+    font-size: 30px;
+}
+
+.ojt p, .college p, .shs p{
+    color: white;
+    font-size: 20px;
+}
+
+/* My Projects */
+
+.banner4{
+    background-color: #070F2B;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.banner4 h1{
+    margin-top: 30px;
+    font-family: 'Inter-Black';
+    font-size: 48px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    background-color: #535c91;
+  
+  /* Create the gradient. */
+    background-image: linear-gradient(45deg, #535c91, #9290c3);
+  
+  /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.project-container1, .project-container2{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.taskly img, .konekta img, .clockin img, .pixsnap img{
+    height: 141px;
+    width: 325px;
+    margin-bottom: 5px;
+}
+
+.taskly, .konekta, .clockin, .pixsnap{
+    border-radius: 30px;
+    padding: 25px;
+    background-color: #1B1A55;
+    width: 375px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.clockin, .pixsnap{
+    margin-top: 30px;
+}
+
+.taskly h4, .konekta h4, .clockin h4, .pixsnap h4{
+    margin-left: 10px;
+    padding: 0;
+    text-align: left;
+    font-family: 'Inter-Black';
+    font-size: 20px;
+    align-self: flex-start;
+    color: white;
+}
+
+.taskly p, .konekta p, .clockin p, .pixsnap p{
+    margin-left: 10px;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1B1A55;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 150px; /* Adjust height as needed */
+    text-align: center;
+    width: 100%; /* Ensure full width */
+}
+
+
+footer img{
+    margin-bottom: 10px;
+    height: 90px;
+    width: 90px;
+}
+
+footer p{
+    color: #9290C3;
+}
